@@ -1,0 +1,88 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff0f3; /* fondo rosa muy claro */
+  padding: 2em;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #a05262; /* rosa palo fuerte */
+}
+
+#malla-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5em;
+}
+
+.ciclo {
+  background-color: #ffffff;
+  border: 2px solid #f3c2cc;
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.05);
+}
+
+.ciclo h2 {
+  margin-top: 0;
+  background-color: #e8a1b0; /* rosa palo */
+  color: white;
+  padding: 0.5em;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.materia {
+  padding: 0.6em;
+  margin: 0.4em 0;
+  border: 2px solid #f3c2cc;
+  border-left: 8px solid #d48a9b;
+  cursor: pointer;
+  background-color: #fffafb;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.materia:hover {
+  background-color: #fce4ec;
+}
+
+.estado-cursada { border-left-color: #78c2ad; /* verde suave */ }
+.estado-en-curso { border-left-color: #f2c94c; /* amarillo */ }
+.estado-pendiente { border-left-color: #eb6f92; /* rosa más fuerte */ }
+
+#info-box {
+  position: fixed;
+  top: 10%;
+  left: 30%;
+  background-color: #ffffff;
+  padding: 2em;
+  border: 3px solid #e8a1b0;
+  border-radius: 12px;
+  z-index: 100;
+  width: 40%;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+#info-box h2 {
+  color: #a05262;
+}
+
+#info-box button {
+  margin-top: 1em;
+  background-color: #e8a1b0;
+  color: white;
+  border: none;
+  padding: 0.6em 1.2em;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#info-box button:hover {
+  background-color: #d48a9b;
+}
+
+.hidden {
+  display: none;
+}
